@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adventure Time RPG</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!--Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <audio src="assets/javascript/adventureTime.mp3" controls autoplay loop>
+        <embed
+            src="assets/javascript/adventureTime.mp3"
+            width="300"
+            height="90"
+            loop="true"
+            autostart="true">
+        </embed>
+    </audio>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="head"><h1>Adventure Time Crystal Game</h1>
+  </div>
+
+   <div id="paragraph">
+      <p>Match the number below by clicking on one of the Adventure Time Crew! 
+      <br>
+      There are four Adventure Time members! Click on one of them to reveal their points value. 
+      <br>
+      To win the game, match the number by using the points produced by the Adventure Time members. You will lose if you go over the number!
+      <br>
+      </p>
+    </div>
+
+    <div id="guess"> <u>Number to hit!</u> 
+    </div>
+
+    <div id="computerScore">
+      <span id="compNum"><p><br>0</p></span>
+    </div>
+
+    <div id="gameCounter">
+          <span id="win"> <h4> Wins:</h4><span id="winCount"><h4>0</h4></span></span>
+          <span id="lose"><h4> Losses:</h4><span id="loseCount"><h4>0</h4></span></span>
+          <span id="message"></span>
+    </div>
+
+
+  <div class="icons">
+                    <button id="orange"><img src="assets/images/pic1.png" alt="orange/jake" width="90" height="90"></button>
+                    <button id="purple"><img src="assets/images/pic2.png" alt="purple/dog" width="90" height="90"></button>
+                    <button id="yellow"><img src="assets/images/pic3.png" alt="yellow/calculator" width="90" height="90"></button>
+                    <button id="blue"><img src="assets/images/pic4.png" alt="blue/king" width="90" height="90"></button>
+  </div>
+
+
+    <div id="scoreCount">
+          <h3>Total score:</h3>
+          <span id="scoreNum">
+           <h3> 0</h3>
+          </span>
+    </div>
+
+    <button id="reloadwin" class="btn btn-info btn-lg" onClick="window.location.reload()">Play Again?</button>
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
+
